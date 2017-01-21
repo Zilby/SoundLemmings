@@ -10,12 +10,15 @@ public class Tower : MonoBehaviour {
 	public bool startEnabled;
 	public bool isToggle;
 
+	private AudioSource click;
+
 	private Animator animator;
 
 	// Use this for initialization
 	void Start () {
 		areaOfEffect.enabled = startEnabled;
 		animator = gameObject.GetComponent<Animator> ();
+		click = gameObject.GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -34,6 +37,7 @@ public class Tower : MonoBehaviour {
 			Vector2 mousePosition = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 			if (gameObject.GetComponent<Collider2D> ().OverlapPoint (mousePosition)) {
 				areaOfEffect.enabled = !areaOfEffect.enabled;
+				click.Play (); 
 			}
 		}
 	}
