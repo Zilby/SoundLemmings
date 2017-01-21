@@ -9,10 +9,10 @@ public class LemmingSpawner : MonoBehaviour {
 
 	public float spawnDelay;
 	public int lemmingSpawnLimit;
-	public Vector2 initialDirection;
 
 	private float timer;
 	private int lemmingsSpawned;
+
 
 	// Use this for initialization
 	void Start () {
@@ -22,33 +22,27 @@ public class LemmingSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (lemmingsSpawned == 0)
-        {
-            Spawn();
-        }
-        if (!usesTrigger)
-        {
-            if (lemmingsSpawned <= lemmingSpawnLimit)
-            {
-                if (timer >= spawnDelay)
-                {
-                    timer = 0f;
-                    Spawn();
-                }
-                else
-                {
-                    timer += Time.deltaTime;
-                }
-            }
-        }
+		if (lemmingsSpawned < lemmingSpawnLimit) {
+			if (!usesTrigger) {
+				if (timer >= spawnDelay) {
+					timer = 0f;
+					Spawn ();
+				} else {
+					timer += Time.deltaTime;
+				}
+			} else if (lemmingsSpawned == 0) {
+				Spawn ();
+			}
+		}
 	}
 
     public void Spawn ()
     {
 		Lemming temp = Instantiate (lemmingPrefab, gameObject.transform.position,
 			Quaternion.identity);
-		temp.SetDirection (new Vector2(Mathf.Cos(gameObject.transform.rotation.z * ((2f * Mathf.PI) / 180f)),
-			Mathf.Sin(gameObject.transform.rotation.z * ((2f * Mathf.PI) / 180f))));
+		float z = gameObject.transform.rotation.eulerAngles.z;
+		temp.SetDirection (new Vector2(Mathf.Cos(z * (Mathf.PI / 180)),
+			Mathf.Sin(z * (Mathf.PI / 180))));
         lemmingsSpawned += 1;
     }
 }
