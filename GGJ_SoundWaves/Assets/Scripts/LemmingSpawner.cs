@@ -33,7 +33,10 @@ public class LemmingSpawner : MonoBehaviour {
 			} else if (lemmingsSpawned == 0) {
 				Spawn ();
 			}
+		} else {
+			Destroy (gameObject);
 		}
+
 	}
 
     public void Spawn ()
