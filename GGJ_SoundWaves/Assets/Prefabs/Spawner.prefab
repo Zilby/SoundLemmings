@@ -54,7 +54,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lemmingPrefab: {fileID: 114048890355712614, guid: 0647818b9cb0f475b907fb4031b49c14,
     type: 2}
+  trig: {fileID: 114768843948835938, guid: 9ecbbde8c89fc4cb89f033d75c384e2a, type: 2}
   usesTrigger: 0
+  initDelay: 0
   spawnDelay: 3
   lemmingSpawnLimit: 100
 --- !u!212 &212960477732664952

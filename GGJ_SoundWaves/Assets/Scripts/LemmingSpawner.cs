@@ -5,10 +5,13 @@ using UnityEngine;
 public class LemmingSpawner : MonoBehaviour {
 
 	public Lemming lemmingPrefab;
-    public bool usesTrigger;
-
+	public TriggerZone trig;
+    
+	public bool usesTrigger;
+	public float initDelay;
 	public float spawnDelay;
 	public int lemmingSpawnLimit;
+
 
 	private float timer;
 	private int lemmingsSpawned;
@@ -23,21 +26,24 @@ public class LemmingSpawner : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (lemmingsSpawned < lemmingSpawnLimit) {
-			if (lemmingsSpawned == 0) {
-				Spawn ();
-			}
-			else if (!usesTrigger) {
-				if (timer >= spawnDelay) {
+			if (timer >= initDelay) {
+				if (lemmingsSpawned == 0) {
 					timer = 0f;
 					Spawn ();
-				} else {
-					timer += Time.deltaTime;
+				} else if (!usesTrigger) {
+					if (timer >= spawnDelay) {
+						timer = 0f;
+						Spawn ();
+					} else {
+						timer += Time.deltaTime;
+					}
 				}
+			} else {
+				timer += Time.deltaTime;
 			}
 		} else {
 			Destroy (gameObject);
 		}
-
 	}
 
     public void Spawn ()
