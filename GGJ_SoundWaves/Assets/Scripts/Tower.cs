@@ -48,6 +48,9 @@ public class Tower : MonoBehaviour {
 			if (gameObject.GetComponent<Collider2D> ().OverlapPoint (mousePosition)) {
 				areaOfEffect.enabled = true;
 			}
+			else {
+				areaOfEffect.enabled = false;
+			}
 		}
 		else {
 			areaOfEffect.enabled = false;
