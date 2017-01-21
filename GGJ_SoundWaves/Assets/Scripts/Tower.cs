@@ -7,11 +7,8 @@ public class Tower : MonoBehaviour {
 	public Collider2D areaOfEffect;
 	public bool startEnabled;
 
-	private Collider2D towerCollider;
-
 	// Use this for initialization
 	void Start () {
-		towerCollider = gameObject.GetComponent<Collider2D> ();
 		areaOfEffect.enabled = startEnabled;
 	}
 	
