@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{AF1CCF99-A81D-EA29-05FA-ABA0915C46AE}") = "GGJ_SoundWaves", "Assembly-CSharp.csproj", "{1E9EF3B9-F983-7B82-67DE-7EBEF21C1EDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E9EF3B9-F983-7B82-67DE-7EBEF21C1EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E9EF3B9-F983-7B82-67DE-7EBEF21C1EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E9EF3B9-F983-7B82-67DE-7EBEF21C1EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E9EF3B9-F983-7B82-67DE-7EBEF21C1EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
