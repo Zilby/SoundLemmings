@@ -5,6 +5,7 @@ using UnityEngine;
 public class LemmingSpawner : MonoBehaviour {
 
 	public Lemming lemmingPrefab;
+    public bool usesTrigger;
 
 	public float spawnDelay;
 	public int lemmingSpawnLimit;
@@ -20,13 +21,30 @@ public class LemmingSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (lemmingsSpawned <= lemmingSpawnLimit) {
-			if (timer >= spawnDelay) {
-				timer = 0f;
-				Instantiate (lemmingPrefab, gameObject.transform.position, Quaternion.identity);
-			} else {
-				timer += Time.deltaTime;
-			}
-		}
+        if (lemmingsSpawned == 0)
+        {
+            Spawn();
+        }
+        if (!usesTrigger)
+        {
+            if (lemmingsSpawned <= lemmingSpawnLimit)
+            {
+                if (timer >= spawnDelay)
+                {
+                    timer = 0f;
+                    Spawn();
+                }
+                else
+                {
+                    timer += Time.deltaTime;
+                }
+            }
+        }
 	}
+
+    public void Spawn ()
+    {
+        Instantiate(lemmingPrefab, gameObject.transform.position, Quaternion.identity);
+        lemmingsSpawned += 1;
+    }
 }
