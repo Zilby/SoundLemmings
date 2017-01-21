@@ -14,16 +14,17 @@ public class Tower : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	}
-
-	void OnMouseOver() {
-		if (Input.GetMouseButtonDown (0)) {
-			areaOfEffect.enabled = !areaOfEffect.enabled;
-			if (areaOfEffect.enabled) {
-				areaOfEffect.gameObject.GetComponent<SpriteRenderer> ().color = Color.blue;
-			} else {
-				areaOfEffect.gameObject.GetComponent<SpriteRenderer> ().color = Color.red;
-			}
-		}
-	}
+        if (Input.GetMouseButtonDown(0)) {
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if (gameObject.GetComponent<Collider2D>().OverlapPoint(mousePosition)) {
+                areaOfEffect.enabled = !areaOfEffect.enabled;
+                if (areaOfEffect.enabled) {
+                    areaOfEffect.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+                }
+                else {
+                    areaOfEffect.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+                }
+            }
+        }
+    }
 }
