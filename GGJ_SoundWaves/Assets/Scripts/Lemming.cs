@@ -5,6 +5,7 @@ using UnityEngine;
 public class Lemming : MonoBehaviour {
 
 	public float speed;
+	public GameObject destroyed;
 
 	private Rigidbody2D rb;
 
@@ -17,6 +18,11 @@ public class Lemming : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	public void Death() {
+		Instantiate (destroyed, gameObject.transform.position, Quaternion.identity);
+		Destroy (gameObject);
 	}
 
 	public void SetDirection(Vector2 dir) {

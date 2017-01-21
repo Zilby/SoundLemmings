@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PulseLight : MonoBehaviour {
 
+	public float minIntensity;
 	public float pulseSpeed;
 
 	private Light pulseLight;
@@ -19,14 +20,14 @@ public class PulseLight : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (isDecreasing && pulseLight.intensity <= 0f) {
-			pulseLight.intensity = 0f;
+		if (isDecreasing && pulseLight.intensity <= minIntensity) {
+			pulseLight.intensity = minIntensity;
 			isDecreasing = false;
 		} else if (!isDecreasing && pulseLight.intensity >= maxIntensity) {
 			pulseLight.intensity = maxIntensity;
 			isDecreasing = true;
 		}
-		if (isDecreasing && pulseLight.intensity > 0f) {
+		if (isDecreasing && pulseLight.intensity > minIntensity) {
 			pulseLight.intensity -= Time.deltaTime * pulseSpeed;
 		} else if (!isDecreasing && pulseLight.intensity < maxIntensity) {
 			pulseLight.intensity += Time.deltaTime * pulseSpeed;

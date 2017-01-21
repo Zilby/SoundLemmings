@@ -14,7 +14,7 @@ public class KillWall : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col) {
 		if (col.gameObject.tag == "Lemming") {
-			Destroy (col.gameObject);
+			col.gameObject.GetComponent<Lemming> ().Death ();
 			amountOfLemmingsDestroyed += 1;
 			killSound.Play ();
 		}

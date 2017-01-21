@@ -12,7 +12,7 @@ public class PlayBox : MonoBehaviour {
 
 	void OnTriggerExit2D(Collider2D col) {
 		if (col.gameObject.tag == "Lemming") {
-			Destroy (col.gameObject);
+			col.gameObject.GetComponent<Lemming> ().Death ();
 			amountOfLemmingsDestroyed += 1;
 		}
 	}
