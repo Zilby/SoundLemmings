@@ -32,4 +32,8 @@ public class Lemming : MonoBehaviour {
 	void FixedUpdate() {
 		rb.velocity = rb.velocity.normalized * speed;
 	}
+
+	public void AdjSpeed(float mod) {
+		speed *= mod;
+	}
 }
