@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Attraction.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\GoalBox.cs" />
      <Compile Include="Assets\Scripts\Lemming.cs" />
      <Compile Include="Assets\Scripts\LemmingSpawner.cs" />
      <Compile Include="Assets\Scripts\PlayBox.cs" />

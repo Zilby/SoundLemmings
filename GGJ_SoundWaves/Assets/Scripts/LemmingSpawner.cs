@@ -20,7 +20,7 @@ public class LemmingSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (lemmingsSpawned >= lemmingSpawnLimit) {
+		if (lemmingsSpawned <= lemmingSpawnLimit) {
 			if (timer >= spawnDelay) {
 				timer = 0f;
 				Instantiate (lemmingPrefab, gameObject.transform.position, Quaternion.identity);
