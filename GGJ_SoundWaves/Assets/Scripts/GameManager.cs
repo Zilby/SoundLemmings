@@ -16,9 +16,12 @@ public class GameManager : MonoBehaviour {
 	public int round;
 	public string levelTitle;
 
+	public AudioSource audioWin;
+	public AudioSource audioLoss;
+	public AudioSource audioMusic;
+
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
@@ -49,11 +52,13 @@ public class GameManager : MonoBehaviour {
 	private void GameWin() {
 		Time.timeScale = 0f;
 		uiManager.SetEndLevel (goalBox.GetAmountOfLemmingsInGoal (), playBox.GetAmountOfLemmingsDestroyed (), true);
+		audioWin.Play ();
 	}
 
 	private void GameLoss() {
 		Time.timeScale = 0f;
 		uiManager.SetEndLevel (goalBox.GetAmountOfLemmingsInGoal (), playBox.GetAmountOfLemmingsDestroyed (), false);
+		audioLoss.Play ();
 	}
 
 	private void PauseEverything() {
