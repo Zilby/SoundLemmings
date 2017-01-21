@@ -2,16 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lemming : MonoBehaviour {
+public class Tower : MonoBehaviour {
 
-	public float speed;
-
-	private Rigidbody2D rb;
+	public Collider2D areaOfEffect;
 
 	// Use this for initialization
 	void Start () {
-		rb = gameObject.GetComponent<Rigidbody2D> ();
-		rb.AddForce (Vector2.down * speed);
+		areaOfEffect.enabled = false;
 	}
 	
 	// Update is called once per frame
