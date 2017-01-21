@@ -9,7 +9,7 @@ public class Lemming : MonoBehaviour {
 	private Rigidbody2D rb;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		rb = gameObject.GetComponent<Rigidbody2D> ();
 		rb.velocity = Vector2.down * speed;
 	}
@@ -17,6 +17,10 @@ public class Lemming : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	public void SetDirection(Vector2 dir) {
+		rb.velocity = dir.normalized * speed;
 	}
 
 	void FixedUpdate() {

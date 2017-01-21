@@ -8,6 +8,7 @@ public class LemmingSpawner : MonoBehaviour {
 
 	public float spawnDelay;
 	public int lemmingSpawnLimit;
+	public Vector2 initialDirection;
 
 	private float timer;
 	private int lemmingsSpawned;
@@ -23,7 +24,10 @@ public class LemmingSpawner : MonoBehaviour {
 		if (lemmingsSpawned <= lemmingSpawnLimit) {
 			if (timer >= spawnDelay) {
 				timer = 0f;
-				Instantiate (lemmingPrefab, gameObject.transform.position, Quaternion.identity);
+				Lemming temp = Instantiate (lemmingPrefab, gameObject.transform.position,
+					               Quaternion.identity);
+				temp.SetDirection (new Vector2(Mathf.Cos(gameObject.transform.rotation.z * ((2f * Mathf.PI) / 180f)),
+					Mathf.Sin(gameObject.transform.rotation.z * ((2f * Mathf.PI) / 180f))));
 			} else {
 				timer += Time.deltaTime;
 			}
