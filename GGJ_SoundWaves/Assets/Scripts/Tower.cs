@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour {
 
+	// Check if this CHANGES!!
+
 	public Collider2D areaOfEffect;
 	public bool startEnabled;
 
