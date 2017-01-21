@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayBox : MonoBehaviour {
 
-	private int amountOfLemmingsDestroyed;
+	public int amountOfLemmingsDestroyed;
 
 	public int GetAmountOfLemmingsDestroyed() {
 		return amountOfLemmingsDestroyed;

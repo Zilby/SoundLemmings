@@ -198,7 +198,6 @@ MonoBehaviour:
   usesTrigger: 0
   spawnDelay: 3
   lemmingSpawnLimit: 100
-  initialDirection: {x: 0, y: -1}
 --- !u!4 &67259664
 Transform:
   m_ObjectHideFlags: 0
@@ -1732,6 +1731,9 @@ MonoBehaviour:
   playBox: {fileID: 1991497021}
   winAmount: 1
   lossAmount: 100
+  audioWin: {fileID: 0}
+  audioLoss: {fileID: 0}
+  audioMusic: {fileID: 0}
 --- !u!4 &1874479461
 Transform:
   m_ObjectHideFlags: 0
@@ -1997,6 +1999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4478ded92f2ea4c63b90308ba2534f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amountOfLemmingsDestroyed: 0
 --- !u!1 &2062816163
 GameObject:
   m_ObjectHideFlags: 0

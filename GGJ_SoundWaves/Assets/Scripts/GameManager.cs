@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	private void GameLoss() {
+		Debug.Log ("wut");
 		audioLoss.Play ();
 	}
 
