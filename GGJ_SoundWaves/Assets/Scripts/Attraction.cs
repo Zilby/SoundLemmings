@@ -9,9 +9,10 @@ public class Attraction : MonoBehaviour {
 	public float strength;
 	public bool isAttract;
 
+	public float fullScale;
+
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame

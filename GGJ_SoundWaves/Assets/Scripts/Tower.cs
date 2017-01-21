@@ -26,11 +26,7 @@ public class Tower : MonoBehaviour {
 			ClickAndHold ();
 		}
 		animator.SetBool ("activated", areaOfEffect.enabled);
-		if (areaOfEffect.enabled) {
-			areaOfEffect.gameObject.GetComponent<SpriteRenderer> ().color = Color.blue;
-		} else {
-			areaOfEffect.gameObject.GetComponent<SpriteRenderer> ().color = Color.red;
-		}
+		areaOfEffect.gameObject.GetComponent<Animator> ().SetBool ("activated", areaOfEffect.enabled);
     }
 
 	private void Toggle() {
