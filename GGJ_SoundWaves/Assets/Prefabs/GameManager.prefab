@@ -141,7 +141,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a1cad18c3ea50be4d8797be747b65c8a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -386,7 +386,7 @@ MonoBehaviour:
   towers:
   - {fileID: 0}
   killWalls: []
-  goalBox: {fileID: 0}
+  goalBoxes: []
   playBox: {fileID: 0}
   winAmount: 1
   lossAmount: 100

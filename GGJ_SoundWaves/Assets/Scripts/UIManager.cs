@@ -18,6 +18,10 @@ public class UIManager : MonoBehaviour {
 
 	public Canvas pauseMenu;
 
+	public AudioSource pauseOnSound;
+	public AudioSource pauseOffSound;
+
+
 	private string nextLevel;
 
 	private bool paused;
@@ -47,11 +51,13 @@ public class UIManager : MonoBehaviour {
 			inGameUI.enabled = false;
 			pauseMenu.enabled = true;
 			paused = true;
+			pauseOnSound.Play ();
 		} else {
 			Time.timeScale = 1f;
 			inGameUI.enabled = true;
 			pauseMenu.enabled = false;
 			paused = false;
+			pauseOffSound.Play ();
 		}
 	}
 

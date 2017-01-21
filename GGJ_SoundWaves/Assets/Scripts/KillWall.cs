@@ -6,6 +6,8 @@ public class KillWall : MonoBehaviour {
 
 	private int amountOfLemmingsDestroyed;
 
+	public AudioSource killSound;
+
 	public int GetAmountOfLemmingsDestroyed() {
 		return amountOfLemmingsDestroyed;
 	}
@@ -14,6 +16,7 @@ public class KillWall : MonoBehaviour {
 		if (col.gameObject.tag == "Lemming") {
 			Destroy (col.gameObject);
 			amountOfLemmingsDestroyed += 1;
+			killSound.Play ();
 		}
 	}
 }

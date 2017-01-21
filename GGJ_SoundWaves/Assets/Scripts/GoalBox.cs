@@ -6,6 +6,8 @@ public class GoalBox : MonoBehaviour {
 
 	private int amountOfLemmingsInGoal;
 
+	public AudioSource goalSound;
+
 	// Use this for initialization
 	void Start () {
 		amountOfLemmingsInGoal = 0;
@@ -20,6 +22,7 @@ public class GoalBox : MonoBehaviour {
 		if (col.gameObject.tag == "Lemming") {
 			col.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 			amountOfLemmingsInGoal += 1;
+			goalSound.Play ();
 		}
 	}
 
