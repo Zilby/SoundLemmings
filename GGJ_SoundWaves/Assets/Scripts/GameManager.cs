@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
 	public Camera mainCamera;
+	public UIManager uiManager;
 	public List<Tower> towers;
 	public GoalBox goalBox;
 	public PlayBox playBox;
@@ -26,8 +27,13 @@ public class GameManager : MonoBehaviour {
 	}
 
 	private void GameWin() {
+		uiManager.SetEndLevel (goalBox.GetAmountOfLemmingsInGoal (), playBox.GetAmountOfLemmingsDestroyed ());
 	}
 
 	private void GameLoss() {
+	}
+
+	private void PauseEverything() {
+		Time.timeScale = 0f;
 	}
 }
