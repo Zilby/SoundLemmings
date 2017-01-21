@@ -27,17 +27,21 @@ public class UIManager : MonoBehaviour {
 
 	void Update() {
 		if (Input.GetButtonDown ("Pause") && !endLevelMenu.enabled) {
-			if (!paused) {
-				Time.timeScale = 0f;
-				inGameUI.enabled = false;
-				pauseMenu.enabled = true;
-				paused = true;
-			} else {
-				Time.timeScale = 1f;
-				inGameUI.enabled = true;
-				pauseMenu.enabled = false;
-				paused = false;
-			}
+			Paused ();
+		}
+	}
+
+	public void Paused() {
+		if (!paused) {
+			Time.timeScale = 0f;
+			inGameUI.enabled = false;
+			pauseMenu.enabled = true;
+			paused = true;
+		} else {
+			Time.timeScale = 1f;
+			inGameUI.enabled = true;
+			pauseMenu.enabled = false;
+			paused = false;
 		}
 	}
 
