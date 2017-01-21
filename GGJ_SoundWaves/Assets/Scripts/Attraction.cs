@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Attraction : MonoBehaviour {
 
+	public int behavior;
+
 	public float strength;
 	public bool isAttract;
 
@@ -30,8 +32,8 @@ public class Attraction : MonoBehaviour {
 			}
 			Vector2 dir = new Vector2 (to.x - from.x,
 				              to.y - from.y);
-			float force = Mathf.Pow((gameObject.transform.localScale.x - dir.magnitude), 2) /
-				Mathf.Pow(gameObject.transform.localScale.x, 2);
+			float force = Mathf.Pow((gameObject.transform.localScale.x - dir.magnitude), behavior) /
+				Mathf.Pow(gameObject.transform.localScale.x, behavior);
 			dir = dir.normalized * force * strength;
 			col.gameObject.GetComponent<Rigidbody2D> ().AddForce (dir);
 		}
