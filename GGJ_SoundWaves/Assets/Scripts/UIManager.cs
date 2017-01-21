@@ -9,8 +9,12 @@ public class UIManager : MonoBehaviour {
 	public Canvas endLevelMenu;
 	public Text lemmingsSavedText;
 	public Text lemmingsDestroyedText;
+	public Image success;
+	public Image failure;
 
 	public Canvas inGameUI;
+	public Text level;
+	public Text score;
 
 	public Canvas pauseMenu;
 
@@ -23,6 +27,8 @@ public class UIManager : MonoBehaviour {
 		endLevelMenu.enabled = false;
 		pauseMenu.enabled = false;
 		paused = false;
+		success.enabled = false;
+		failure.enabled = false;
 	}
 
 	void Update() {
@@ -45,8 +51,20 @@ public class UIManager : MonoBehaviour {
 		}
 	}
 
-	public void SetEndLevel(int lemmingsSaved, int lemmingsDestroyed) {
+	public void SetInGame(int lemmingsSaved, int lemmingsToSave, int lemmingsLeft, int round, string levelTitle) {
+		level.text = "Round " + round + ": " + levelTitle;
+		score.text = "Lemmings Left: " + lemmingsLeft + " Score: " + lemmingsSaved + " / " + lemmingsToSave;
+	}
+
+	public void SetEndLevel(int lemmingsSaved, int lemmingsDestroyed, bool won) {
+		if (won) {
+			success.enabled = true;
+		} else {
+			failure.enabled = true;
+		}
 		endLevelMenu.enabled = true;
+		inGameUI.enabled = false;
+		pauseMenu.enabled = false;
 		lemmingsSavedText.text = "Lemmings saved: " + lemmingsSaved;
 		lemmingsDestroyedText.text = "Lemmings destroyed: " + lemmingsDestroyed;
 	}

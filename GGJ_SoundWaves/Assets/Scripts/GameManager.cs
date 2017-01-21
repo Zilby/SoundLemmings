@@ -7,10 +7,14 @@ public class GameManager : MonoBehaviour {
 	public Camera mainCamera;
 	public UIManager uiManager;
 	public List<Tower> towers;
+	public List<KillWall> killWalls;
 	public GoalBox goalBox;
 	public PlayBox playBox;
 	public int winAmount;
 	public int lossAmount;
+
+	public int round;
+	public string levelTitle;
 
 	// Use this for initialization
 	void Start () {
@@ -21,16 +25,35 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 		if (goalBox.GetAmountOfLemmingsInGoal () >= winAmount) {
 			GameWin ();
-		} else if (playBox.GetAmountOfLemmingsDestroyed () >= lossAmount) {
+		} else if (GetTotalLemmingsDestroyed () >= lossAmount) {
 			GameLoss ();
+		} else {
+			UpdateInGameUI ();
 		}
 	}
 
+	private void UpdateInGameUI() {
+		uiManager.SetInGame (goalBox.GetAmountOfLemmingsInGoal (), winAmount, lossAmount - GetTotalLemmingsDestroyed (),
+			round, levelTitle);
+	}
+
+	private int GetTotalLemmingsDestroyed() {
+		int total = 0;
+		foreach(KillWall kw in killWalls) {
+			total += kw.GetAmountOfLemmingsDestroyed ();
+		}
+		total += playBox.GetAmountOfLemmingsDestroyed ();
+		return total;
+	}
+
 	private void GameWin() {
-		uiManager.SetEndLevel (goalBox.GetAmountOfLemmingsInGoal (), playBox.GetAmountOfLemmingsDestroyed ());
+		Time.timeScale = 0f;
+		uiManager.SetEndLevel (goalBox.GetAmountOfLemmingsInGoal (), playBox.GetAmountOfLemmingsDestroyed (), true);
 	}
 
 	private void GameLoss() {
+		Time.timeScale = 0f;
+		uiManager.SetEndLevel (goalBox.GetAmountOfLemmingsInGoal (), playBox.GetAmountOfLemmingsDestroyed (), false);
 	}
 
 	private void PauseEverything() {
