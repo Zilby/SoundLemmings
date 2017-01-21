@@ -8,36 +8,53 @@ public class GameManager : MonoBehaviour {
 	public UIManager uiManager;
 	public List<Tower> towers;
 	public List<KillWall> killWalls;
-	public GoalBox goalBox;
+	public List<GoalBox> goalBoxes;
 	public PlayBox playBox;
 	public int winAmount;
 	public int lossAmount;
 
 	public int round;
 	public string levelTitle;
+	public string nextLevel;
 
 	public AudioSource audioWin;
 	public AudioSource audioLoss;
 	public AudioSource audioMusic;
 
+	private bool gameOver;
+
 	// Use this for initialization
 	void Start () {
+		uiManager.SetNextLevel (nextLevel);
+		gameOver = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (goalBox.GetAmountOfLemmingsInGoal () >= winAmount) {
-			GameWin ();
-		} else if (GetTotalLemmingsDestroyed () >= lossAmount) {
-			GameLoss ();
-		} else {
-			UpdateInGameUI ();
+		if (!gameOver) {
+			if (GetTotalLemmingsSaved () >= winAmount) {
+				GameWin ();
+				gameOver = true;
+			} else if (GetTotalLemmingsDestroyed () >= lossAmount) {
+				GameLoss ();
+				gameOver = true;
+			} else {
+				UpdateInGameUI ();
+			}
 		}
 	}
 
 	private void UpdateInGameUI() {
-		uiManager.SetInGame (goalBox.GetAmountOfLemmingsInGoal (), winAmount, lossAmount - GetTotalLemmingsDestroyed (),
+		uiManager.SetInGame (GetTotalLemmingsSaved (), winAmount, lossAmount - GetTotalLemmingsDestroyed (),
 			round, levelTitle);
+	}
+
+	private int GetTotalLemmingsSaved() {
+		int total = 0;
+		foreach (GoalBox gb in goalBoxes) {
+			total += gb.GetAmountOfLemmingsInGoal ();
+		}
+		return total;
 	}
 
 	private int GetTotalLemmingsDestroyed() {
@@ -51,13 +68,13 @@ public class GameManager : MonoBehaviour {
 
 	private void GameWin() {
 		Time.timeScale = 0f;
-		uiManager.SetEndLevel (goalBox.GetAmountOfLemmingsInGoal (), playBox.GetAmountOfLemmingsDestroyed (), true);
+		uiManager.SetEndLevel (GetTotalLemmingsSaved (), playBox.GetAmountOfLemmingsDestroyed (), true);
 		audioWin.Play ();
 	}
 
 	private void GameLoss() {
 		Time.timeScale = 0f;
-		uiManager.SetEndLevel (goalBox.GetAmountOfLemmingsInGoal (), playBox.GetAmountOfLemmingsDestroyed (), false);
+		uiManager.SetEndLevel (GetTotalLemmingsSaved (), playBox.GetAmountOfLemmingsDestroyed (), false);
 		audioLoss.Play ();
 	}
 

@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 95470294978382750}
   - component: {fileID: 82391502774455002}
   m_Layer: 0
-  m_Name: AttractTower
+  m_Name: AttractTowerHold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -434,7 +434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaOfEffect: {fileID: 58051952092613934}
   startEnabled: 0
-  isToggle: 1
+  isToggle: 0
   loopSound: {fileID: 82722439265728674}
 --- !u!212 &212287014619962928
 SpriteRenderer:

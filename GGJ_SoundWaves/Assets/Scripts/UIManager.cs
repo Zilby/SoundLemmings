@@ -18,7 +18,7 @@ public class UIManager : MonoBehaviour {
 
 	public Canvas pauseMenu;
 
-	public string nextLevel;
+	private string nextLevel;
 
 	private bool paused;
 
@@ -35,6 +35,10 @@ public class UIManager : MonoBehaviour {
 		if (Input.GetButtonDown ("Pause") && !endLevelMenu.enabled) {
 			Paused ();
 		}
+	}
+
+	public void SetNextLevel(string nextLevel) {
+		this.nextLevel = nextLevel;
 	}
 
 	public void Paused() {
