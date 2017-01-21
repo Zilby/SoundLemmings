@@ -42,14 +42,14 @@ public class Tower : MonoBehaviour {
 		if (Input.GetMouseButton(0)) {
 			Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			if (gameObject.GetComponent<Collider2D> ().OverlapPoint (mousePosition)) {
-				areaOfEffect.enabled = true;
+				areaOfEffect.enabled = !startEnabled;
 			}
 			else {
-				areaOfEffect.enabled = false;
+				areaOfEffect.enabled = startEnabled;
 			}
 		}
 		else {
-			areaOfEffect.enabled = false;
+			areaOfEffect.enabled = startEnabled;
 		}
 	}
 }
