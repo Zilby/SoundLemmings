@@ -5,7 +5,7 @@ using UnityEngine;
 public class Attraction : MonoBehaviour {
 
 	public int behavior;
-
+	//chris plz
 	public float strength;
 	public bool isAttract;
 
