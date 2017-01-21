@@ -23,15 +23,16 @@ public class LemmingSpawner : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (lemmingsSpawned < lemmingSpawnLimit) {
-			if (!usesTrigger) {
+			if (lemmingsSpawned == 0) {
+				Spawn ();
+			}
+			else if (!usesTrigger) {
 				if (timer >= spawnDelay) {
 					timer = 0f;
 					Spawn ();
 				} else {
 					timer += Time.deltaTime;
 				}
-			} else if (lemmingsSpawned == 0) {
-				Spawn ();
 			}
 		} else {
 			Destroy (gameObject);
