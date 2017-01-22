@@ -258,7 +258,7 @@ Prefab:
     - target: {fileID: 114380567814779078, guid: c79093409ff2240378e43a2479c52acf,
         type: 2}
       propertyPath: lemmingSpawnLimit
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c79093409ff2240378e43a2479c52acf, type: 2}
@@ -411,7 +411,7 @@ Prefab:
     - target: {fileID: 114765502848842214, guid: 40c53ccf708bf4f6d9ab839b6e9b25c0,
         type: 2}
       propertyPath: winAmount
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114765502848842214, guid: 40c53ccf708bf4f6d9ab839b6e9b25c0,
         type: 2}
