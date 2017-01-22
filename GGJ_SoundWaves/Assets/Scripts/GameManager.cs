@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-	public Camera mainCamera;
-	public UIManager uiManager;
 	public int winAmount;
 	public int lossAmount;
 
@@ -23,6 +21,8 @@ public class GameManager : MonoBehaviour {
 	private ArrayList killWalls;
 	private ArrayList goalBoxes;
 	private PlayBox playBox;
+	private Camera mainCamera;
+	private UIManager uiManager;
 
 	// Use this for initialization
 	void Awake () {
@@ -39,6 +39,9 @@ public class GameManager : MonoBehaviour {
 			goalBoxes.Add (g.GetComponent<GoalBox> ());
 		}
 		playBox = GameObject.FindGameObjectWithTag ("PlayBox").GetComponent<PlayBox> ();
+		mainCamera = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<Camera> ();
+		uiManager = GameObject.FindGameObjectWithTag ("UI").GetComponent<UIManager> ();
+
 		uiManager.SetNextLevel (nextLevel);
 		gameOver = false;
 	}

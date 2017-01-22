@@ -9,6 +9,8 @@ TagManager:
   - KillWall
   - PlayBox
   - GoalBox
+  - UI
+  - Camera
   layers:
   - Default
   - TransparentFX
