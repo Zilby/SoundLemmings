@@ -7,42 +7,54 @@ Direct3D:
     VRAM:     8152 MB
     Driver:   21.21.13.7570
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Ryan\Desktop\Node_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Ryan\Desktop\Node_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Ryan\Desktop\Node_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Ryan\Desktop\Node_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Ryan\Desktop\Node_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Ryan\Desktop\Node_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Ryan\Desktop\Node_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Ryan\Desktop\Node_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Ryan\Desktop\Node_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading C:\Users\Ryan\Desktop\Node_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\Ryan\Desktop\SoundLemmings\Builds\Windows 64\Node_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Ryan\Desktop\SoundLemmings\Builds\Windows 64\Node_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Ryan\Desktop\SoundLemmings\Builds\Windows 64\Node_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Ryan\Desktop\SoundLemmings\Builds\Windows 64\Node_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Ryan\Desktop\SoundLemmings\Builds\Windows 64\Node_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Ryan\Desktop\SoundLemmings\Builds\Windows 64\Node_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Ryan\Desktop\SoundLemmings\Builds\Windows 64\Node_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Ryan\Desktop\SoundLemmings\Builds\Windows 64\Node_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Ryan\Desktop\SoundLemmings\Builds\Windows 64\Node_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Ryan\Desktop\SoundLemmings\Builds\Windows 64\Node_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 - Completed reload, in  0.021 seconds
-Platform assembly: C:\Users\Ryan\Desktop\Node_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Ryan\Desktop\Node_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Ryan\Desktop\SoundLemmings\Builds\Windows 64\Node_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Ryan\Desktop\SoundLemmings\Builds\Windows 64\Node_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.833330 ms
+UnloadTime: 0.722798 ms
 Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.735972 ms
+UnloadTime: 3.746236 ms
 
 Unloading 136 unused Assets to reduce memory usage. Loaded Objects now: 424.
-Total: 2.008519 ms (FindLiveObjects: 0.038686 ms CreateObjectMapping: 0.018158 ms MarkObjects: 0.209615 ms  DeleteObjects: 1.741664 ms)
+Total: 2.168001 ms (FindLiveObjects: 0.020527 ms CreateObjectMapping: 0.013816 ms MarkObjects: 0.215536 ms  DeleteObjects: 1.917725 ms)
 
 Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.757454 ms
+UnloadTime: 1.615737 ms
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1604.
-Total: 2.287217 ms (FindLiveObjects: 0.119216 ms CreateObjectMapping: 0.028817 ms MarkObjects: 0.368307 ms  DeleteObjects: 1.770481 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1141.
+Total: 1.886934 ms (FindLiveObjects: 0.055660 ms CreateObjectMapping: 0.028817 ms MarkObjects: 0.238432 ms  DeleteObjects: 1.563629 ms)
+
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.684902 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1141.
+Total: 0.334753 ms (FindLiveObjects: 0.068292 ms CreateObjectMapping: 0.017764 ms MarkObjects: 0.244748 ms  DeleteObjects: 0.003158 ms)
+
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.634373 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1141.
+Total: 0.415678 ms (FindLiveObjects: 0.063950 ms CreateObjectMapping: 0.018553 ms MarkObjects: 0.312252 ms  DeleteObjects: 0.020132 ms)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.986495 ms
+UnloadTime: 0.702271 ms
 
-Unloading 591 unused Assets to reduce memory usage. Loaded Objects now: 428.
-Total: 1.254930 ms (FindLiveObjects: 0.049739 ms CreateObjectMapping: 0.028817 ms MarkObjects: 0.142112 ms  DeleteObjects: 1.033866 ms)
+Unloading 488 unused Assets to reduce memory usage. Loaded Objects now: 428.
+Total: 1.290852 ms (FindLiveObjects: 0.032370 ms CreateObjectMapping: 0.018553 ms MarkObjects: 0.146454 ms  DeleteObjects: 1.093474 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 4698 -> priority: 1 
-  Thread -> id: 49cc -> priority: 1 
+  Thread -> id: 361c -> priority: 1 
+  Thread -> id: 11a0 -> priority: 1 
