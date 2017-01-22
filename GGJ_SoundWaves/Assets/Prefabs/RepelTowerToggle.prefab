@@ -434,7 +434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   behavior: 0
-  strength: 7
+  strength: 2.5
   isAttract: 0
   fullScale: 0
 --- !u!212 &212256259256181614
