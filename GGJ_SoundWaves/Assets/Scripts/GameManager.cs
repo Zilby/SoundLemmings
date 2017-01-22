@@ -48,15 +48,15 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!gameOver) {
+		if (Input.GetButtonDown("Restart")){
+			uiManager.RestartLevel ();
+		} else if (!gameOver) { 
 			if (GetTotalLemmingsSaved () >= winAmount) {
 				GameWin ();
 				gameOver = true;
 			} else if (GetTotalLemmingsDestroyed () >= lossAmount) {
 				GameLoss ();
 				gameOver = true;
-			} else if (Input.GetButtonDown("Restart")){
-				uiManager.RestartLevel ();
 			} else {
 				UpdateInGameUI ();
 			}
