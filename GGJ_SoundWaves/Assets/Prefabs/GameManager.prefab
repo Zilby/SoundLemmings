@@ -381,10 +381,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47d76467f024a433aba110b01708f3d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
-  uiManager: {fileID: 0}
-  winAmount: 25
-  lossAmount: 15
+  winAmount: 1
+  lossAmount: 1
   round: 1
   levelTitle: TITLE
   nextLevel: CHANGETHIS

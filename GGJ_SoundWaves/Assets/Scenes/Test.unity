@@ -188,138 +188,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1670084161479834, guid: 10d3e391a8f1d481a9da5f89b5499884, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1757525009736748, guid: 10d3e391a8f1d481a9da5f89b5499884, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114339889845866716, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: bc828ee271aa14bb286fce6fa2e547d0,
-        type: 3}
-    - target: {fileID: 224221478666849128, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 444
-      objectReference: {fileID: 0}
-    - target: {fileID: 224221478666849128, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 86
-      objectReference: {fileID: 0}
-    - target: {fileID: 114379200599046446, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_SpriteState.m_HighlightedSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9fa4b567d66b7406e8a00ba331a91344,
-        type: 3}
-    - target: {fileID: 114092101340244024, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7daa17dcd89a14bcfaa6ca148f68dd80,
-        type: 3}
-    - target: {fileID: 114947508475009508, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_SpriteState.m_HighlightedSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: e06d0d7d5aae34229a7fc5750a310872,
-        type: 3}
-    - target: {fileID: 224203166514718924, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 343
-      objectReference: {fileID: 0}
-    - target: {fileID: 224203166514718924, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 88
-      objectReference: {fileID: 0}
-    - target: {fileID: 1749790646907904, guid: 10d3e391a8f1d481a9da5f89b5499884, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114158232364555168, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: aade317897bc64d448650478b0cfcffc,
-        type: 3}
-    - target: {fileID: 224942011020934526, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 449
-      objectReference: {fileID: 0}
-    - target: {fileID: 224942011020934526, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 108
-      objectReference: {fileID: 0}
-    - target: {fileID: 114077005841726480, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_SpriteState.m_HighlightedSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c4a69c984068042fe99238bd95b8915b,
-        type: 3}
-    - target: {fileID: 114362293480504302, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7fbd3e5b9ef1d4a8a99d7d84013c737a,
-        type: 3}
-    - target: {fileID: 224343653054017410, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 311
-      objectReference: {fileID: 0}
-    - target: {fileID: 224343653054017410, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 102
-      objectReference: {fileID: 0}
-    - target: {fileID: 114048188365611762, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_SpriteState.m_HighlightedSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 3180b1f8eb2b348708799c701ee034a4,
-        type: 3}
-    - target: {fileID: 114463246871353804, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 552c736aa79f2409db1b4fa0a18f0af2,
-        type: 3}
-    - target: {fileID: 224501164689392520, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 459
-      objectReference: {fileID: 0}
-    - target: {fileID: 224501164689392520, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114474074658929680, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_SpriteState.m_HighlightedSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c6e2f0a96b9e14b5b8530f3a57bf5e1a,
-        type: 3}
-    - target: {fileID: 114505280428389340, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: continueButton
-      value: 
-      objectReference: {fileID: 2044273673}
-    - target: {fileID: 114077005841726480, guid: 10d3e391a8f1d481a9da5f89b5499884,
-        type: 2}
-      propertyPath: m_SpriteState.m_DisabledSprite
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 10d3e391a8f1d481a9da5f89b5499884, type: 2}
   m_IsPrefabParent: 0
@@ -618,12 +486,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d3c32e048138435a9baa16a8cd597ec, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1098695261 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114505280428389340, guid: 10d3e391a8f1d481a9da5f89b5499884,
-    type: 2}
-  m_PrefabInternal: {fileID: 76787857}
-  m_Script: {fileID: 11500000, guid: 2568a1b82d3864776af92c825b9e89e0, type: 3}
 --- !u!1001 &1110798686
 Prefab:
   m_ObjectHideFlags: 0
@@ -834,18 +696,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e4bba70da38ac4880ad4de2207fc0666, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1770823362 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114003623344742150, guid: 8d3c32e048138435a9baa16a8cd597ec,
-    type: 2}
-  m_PrefabInternal: {fileID: 1043661221}
-  m_Script: {fileID: 11500000, guid: 7ba5e9a74d88d4e19815979c04c6d2e2, type: 3}
---- !u!114 &1991497021 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114891774389126004, guid: f7a55ae4604454571b7962b97e9a7f83,
-    type: 2}
-  m_PrefabInternal: {fileID: 1424243385}
-  m_Script: {fileID: 11500000, guid: 4478ded92f2ea4c63b90308ba2534f7b, type: 3}
 --- !u!1001 &2009806565
 Prefab:
   m_ObjectHideFlags: 0
@@ -885,42 +735,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114765502848842214, guid: 40c53ccf708bf4f6d9ab839b6e9b25c0,
-        type: 2}
-      propertyPath: mainCamera
-      value: 
-      objectReference: {fileID: 657265046}
-    - target: {fileID: 114765502848842214, guid: 40c53ccf708bf4f6d9ab839b6e9b25c0,
-        type: 2}
-      propertyPath: uiManager
-      value: 
-      objectReference: {fileID: 1098695261}
-    - target: {fileID: 114765502848842214, guid: 40c53ccf708bf4f6d9ab839b6e9b25c0,
-        type: 2}
-      propertyPath: goalBoxes.Array.data[0]
-      value: 
-      objectReference: {fileID: 1770823362}
-    - target: {fileID: 114765502848842214, guid: 40c53ccf708bf4f6d9ab839b6e9b25c0,
-        type: 2}
-      propertyPath: playBox
-      value: 
-      objectReference: {fileID: 1991497021}
-    - target: {fileID: 114765502848842214, guid: 40c53ccf708bf4f6d9ab839b6e9b25c0,
-        type: 2}
-      propertyPath: winAmount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114765502848842214, guid: 40c53ccf708bf4f6d9ab839b6e9b25c0,
-        type: 2}
-      propertyPath: lossAmount
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 40c53ccf708bf4f6d9ab839b6e9b25c0, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &2044273673 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114077005841726480, guid: 10d3e391a8f1d481a9da5f89b5499884,
-    type: 2}
-  m_PrefabInternal: {fileID: 76787857}
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
