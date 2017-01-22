@@ -54,23 +54,31 @@ public class UIManager : MonoBehaviour {
 
 	public void Paused() {
 		if (!paused) {
-			Time.timeScale = 0f;
-			inGameUI.enabled = false;
+			PausePlay (true);
 			pauseMenu.enabled = true;
-			foreach (Tower g in towers) {
-				g.enabled = false;
-			}
 			paused = true;
 			pauseOnSound.Play ();
 		} else {
+			PausePlay (false);
+			pauseMenu.enabled = false;
+			paused = false;
+			pauseOffSound.Play ();
+		}
+	}
+
+	public void PausePlay(bool shouldPause) {
+		if (shouldPause) {
+			Time.timeScale = 0f;
+			inGameUI.enabled = false;
+			foreach (Tower g in towers) {
+				g.enabled = false;
+			}
+		} else {
 			Time.timeScale = 1f;
 			inGameUI.enabled = true;
-			pauseMenu.enabled = false;
 			foreach (Tower g in towers) {
 				g.enabled = true;
 			}
-			paused = false;
-			pauseOffSound.Play ();
 		}
 	}
 
