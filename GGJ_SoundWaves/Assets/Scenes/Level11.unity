@@ -445,6 +445,11 @@ Prefab:
       propertyPath: trig
       value: 
       objectReference: {fileID: 1762285042}
+    - target: {fileID: 114380567814779078, guid: c79093409ff2240378e43a2479c52acf,
+        type: 2}
+      propertyPath: initDelay
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c79093409ff2240378e43a2479c52acf, type: 2}
   m_IsPrefabParent: 0
