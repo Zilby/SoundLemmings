@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Credits : MonoBehaviour {
 
@@ -15,5 +16,11 @@ public class Credits : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		text.transform.position = text.transform.position + new Vector3 (0, scrollSpeed, 0) * Time.deltaTime;
+
+		if (Input.GetButtonDown ("Pause")) {
+		
+			Debug.Log ("butts");
+			SceneManager.LoadScene ("MainMenu");
+		}
 	}
 }
