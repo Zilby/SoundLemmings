@@ -52,6 +52,8 @@ public class GameManager : MonoBehaviour {
 			} else if (GetTotalLemmingsDestroyed () >= lossAmount) {
 				GameLoss ();
 				gameOver = true;
+			} else if (Input.GetButtonDown("Restart")){
+				uiManager.RestartLevel ();
 			} else {
 				UpdateInGameUI ();
 			}
