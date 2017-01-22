@@ -16,30 +16,44 @@ public class LemmingSpawner : MonoBehaviour {
 	private float timer;
 	private int lemmingsSpawned;
 
+	private Animator animator;
+
 
 	// Use this for initialization
 	void Start () {
 		timer = 0f;
 		lemmingsSpawned = 0;
+		initDelay += 1f;
+		animator = gameObject.GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (lemmingsSpawned < lemmingSpawnLimit) {
-			if (timer >= initDelay) {
-				if (lemmingsSpawned == 0) {
+			if (lemmingsSpawned == 0) {
+				if (timer >= initDelay) {
 					timer = 0f;
 					Spawn ();
-				} else if (!usesTrigger) {
-					if (timer >= spawnDelay) {
-						timer = 0f;
-						Spawn ();
-					} else {
-						timer += Time.deltaTime;
-					}
+				} else {
+					timer += Time.deltaTime;
 				}
-			} else {
-				timer += Time.deltaTime;
+				if ((timer + 0.75f) >= initDelay) {
+					animator.SetBool ("spawning", true);
+				} else {
+					animator.SetBool ("spawning", false);
+				}
+			} else if (!usesTrigger) {
+				if (timer >= spawnDelay) {
+					timer = 0f;
+					Spawn ();
+				} else {
+					timer += Time.deltaTime;
+				}
+				if ((timer + 0.75f) >= spawnDelay) {
+					animator.SetBool ("spawning", true);
+				} else {
+					animator.SetBool ("spawning", false);
+				}
 			}
 		} else {
 			Destroy (gameObject);
