@@ -19,6 +19,8 @@ ExportedObj/
 /GGJ_SoundWaves/*.booproj
 /GGJ_SoundWaves/*.svd
 /GGJ_SoundWaves/*.pdb
+/GGJ_SoundWaves/.DS_Store
+/GGJ_SoundWaves/*/.DS_Store
 
 
 # Unity3D generated meta files
