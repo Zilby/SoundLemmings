@@ -26,6 +26,8 @@ public class UIManager : MonoBehaviour {
 
 	private bool paused;
 
+	private ArrayList towers;
+
 	// Use this for initialization
 	void Start () {
 		endLevelMenu.enabled = false;
@@ -33,6 +35,11 @@ public class UIManager : MonoBehaviour {
 		paused = false;
 		success.enabled = false;
 		failure.enabled = false;
+
+		towers = new ArrayList ();
+		foreach (GameObject g in GameObject.FindGameObjectsWithTag("Tower")) {
+			towers.Add (g.GetComponent<Tower> ());
+		}
 	}
 
 	void Update() {
@@ -50,19 +57,25 @@ public class UIManager : MonoBehaviour {
 			Time.timeScale = 0f;
 			inGameUI.enabled = false;
 			pauseMenu.enabled = true;
+			foreach (Tower g in towers) {
+				g.enabled = false;
+			}
 			paused = true;
 			pauseOnSound.Play ();
 		} else {
 			Time.timeScale = 1f;
 			inGameUI.enabled = true;
 			pauseMenu.enabled = false;
+			foreach (Tower g in towers) {
+				g.enabled = true;
+			}
 			paused = false;
 			pauseOffSound.Play ();
 		}
 	}
 
 	public void SetInGame(int lemmingsSaved, int lemmingsToSave, int lemmingsLeft, int round, string levelTitle) {
-		level.text = "Round " + round + ": " + levelTitle;
+		level.text = "Stage " + round + ": " + levelTitle;
 		score.text = "Lives Remaining: " + (lemmingsLeft - 1) + "     Score: " + lemmingsSaved + " / " + lemmingsToSave;
 		lemmingsSavedText.text = "Saved: " + lemmingsSaved + " / " + lemmingsToSave;
 	}

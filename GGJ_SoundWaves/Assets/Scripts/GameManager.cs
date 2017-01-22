@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour {
 
 	private bool gameOver;
 
-	private ArrayList towers;
 	private ArrayList killWalls;
 	private ArrayList goalBoxes;
 	private PlayBox playBox;
@@ -25,12 +24,8 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-		towers = new ArrayList ();
 		killWalls = new ArrayList ();
 		goalBoxes = new ArrayList ();
-		foreach (GameObject g in GameObject.FindGameObjectsWithTag("Tower")) {
-			towers.Add (g.GetComponent<Tower> ());
-		}
 		foreach (GameObject g in GameObject.FindGameObjectsWithTag("KillWall")) {
 			killWalls.Add (g.GetComponent<KillWall> ());
 		}
