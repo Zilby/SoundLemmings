@@ -82,13 +82,13 @@ public class GameManager : MonoBehaviour {
 
 	private void GameWin() {
 		Time.timeScale = 0f;
-		uiManager.SetEndLevel (GetTotalLemmingsSaved (), playBox.GetAmountOfLemmingsDestroyed (), true);
+		uiManager.SetEndLevel (GetTotalLemmingsSaved (), GetTotalLemmingsDestroyed (), true);
 		audioWin.Play ();
 	}
 
 	private void GameLoss() {
 		Time.timeScale = 0f;
-		uiManager.SetEndLevel (GetTotalLemmingsSaved (), playBox.GetAmountOfLemmingsDestroyed (), false);
+		uiManager.SetEndLevel (GetTotalLemmingsSaved (), GetTotalLemmingsDestroyed (), false);
 		audioLoss.Play ();
 	}
 
