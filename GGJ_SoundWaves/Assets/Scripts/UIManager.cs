@@ -63,7 +63,7 @@ public class UIManager : MonoBehaviour {
 
 	public void SetInGame(int lemmingsSaved, int lemmingsToSave, int lemmingsLeft, int round, string levelTitle) {
 		level.text = "Round " + round + ": " + levelTitle;
-		score.text = "Left: " + lemmingsLeft + "     Score: " + lemmingsSaved + " / " + lemmingsToSave;
+		score.text = "Lives Remaining: " + (lemmingsLeft - 1) + "     Score: " + lemmingsSaved + " / " + lemmingsToSave;
 	}
 
 	public void SetEndLevel(int lemmingsSaved, int lemmingsDestroyed, bool won) {

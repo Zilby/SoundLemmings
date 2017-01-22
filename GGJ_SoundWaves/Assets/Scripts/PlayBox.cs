@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class PlayBox : MonoBehaviour {
 
-	public int amountOfLemmingsDestroyed;
+	private int amountOfLemmingsDestroyed;
+
+	private AudioSource killSound;
+
+	void Start() {
+		killSound = gameObject.GetComponent<AudioSource> ();
+	}
 
 	public int GetAmountOfLemmingsDestroyed() {
 		return amountOfLemmingsDestroyed;
@@ -14,6 +20,7 @@ public class PlayBox : MonoBehaviour {
 		if (col.gameObject.tag == "Lemming") {
 			col.gameObject.GetComponent<Lemming> ().Death ();
 			amountOfLemmingsDestroyed += 1;
+			killSound.Play ();
 		}
 	}
 }
