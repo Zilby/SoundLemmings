@@ -90,10 +90,12 @@ public class UIManager : MonoBehaviour {
 	}
 
 	public void LoadNextLevel() {
+		Time.timeScale = 1f;
 		SceneManager.LoadScene (nextLevel);
 	}
 
 	public void QuitToMenu() {
+		Time.timeScale = 1f;
 		SceneManager.LoadScene ("MainMenu");
 	}
 }
