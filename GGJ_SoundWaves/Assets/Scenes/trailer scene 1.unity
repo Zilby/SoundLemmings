@@ -277,7 +277,7 @@ Prefab:
     - target: {fileID: 114380567814779078, guid: c79093409ff2240378e43a2479c52acf,
         type: 2}
       propertyPath: spawnDelay
-      value: 7.5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114380567814779078, guid: c79093409ff2240378e43a2479c52acf,
         type: 2}
