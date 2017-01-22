@@ -59,6 +59,8 @@ public class GameManager : MonoBehaviour {
 				UpdateInGameUI ();
 			}
 		}
+		//chris D added this:
+		UpdateInGameUI ();
 	}
 
 	private void UpdateInGameUI() {

@@ -22,7 +22,6 @@ public class UIManager : MonoBehaviour {
 	public AudioSource pauseOnSound;
 	public AudioSource pauseOffSound;
 
-
 	private string nextLevel;
 
 	private bool paused;
@@ -65,6 +64,7 @@ public class UIManager : MonoBehaviour {
 	public void SetInGame(int lemmingsSaved, int lemmingsToSave, int lemmingsLeft, int round, string levelTitle) {
 		level.text = "Round " + round + ": " + levelTitle;
 		score.text = "Lives Remaining: " + (lemmingsLeft - 1) + "     Score: " + lemmingsSaved + " / " + lemmingsToSave;
+		lemmingsSavedText.text = "Saved: " + lemmingsSaved + " / " + lemmingsToSave;
 	}
 
 	public void SetEndLevel(int lemmingsSaved, int lemmingsDestroyed, bool won) {
@@ -80,7 +80,7 @@ public class UIManager : MonoBehaviour {
 		endLevelMenu.enabled = true;
 		inGameUI.enabled = false;
 		pauseMenu.enabled = false;
-		lemmingsSavedText.text = "Saved: " + lemmingsSaved;
+		//lemmingsSavedText.text = "Saved: " + lemmingsSaved + " / " + ;
 		lemmingsDestroyedText.text = "Destroyed: " + lemmingsDestroyed;
 	}
 
