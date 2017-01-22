@@ -423,7 +423,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.8085537
+  orthographic size: 8.828762
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -482,7 +482,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.7, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2000824693
@@ -506,18 +506,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7626ee3eeb7ab4ec280d21fdddf0e71d, type: 3}
-    m_FontSize: 220
+    m_FontSize: 300
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 220
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: N   d e
+  m_Text: N de
 --- !u!222 &2000824694
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -592,7 +592,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4831419350395530, guid: c7686eaada01b450893629f9382f6c77, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.08
+      value: -1.35
       objectReference: {fileID: 0}
     - target: {fileID: 4831419350395530, guid: c7686eaada01b450893629f9382f6c77, type: 2}
       propertyPath: m_LocalPosition.y
@@ -626,6 +626,21 @@ Prefab:
         type: 2}
       propertyPath: startEnabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82391502774455002, guid: c7686eaada01b450893629f9382f6c77,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82722439265728674, guid: c7686eaada01b450893629f9382f6c77,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82391502774455002, guid: c7686eaada01b450893629f9382f6c77,
+        type: 2}
+      propertyPath: MinDistance
+      value: 4.5164795
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7686eaada01b450893629f9382f6c77, type: 2}
