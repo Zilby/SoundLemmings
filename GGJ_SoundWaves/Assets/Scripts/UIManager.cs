@@ -63,7 +63,7 @@ public class UIManager : MonoBehaviour {
 
 	public void SetInGame(int lemmingsSaved, int lemmingsToSave, int lemmingsLeft, int round, string levelTitle) {
 		level.text = "Round " + round + ": " + levelTitle;
-		score.text = "Lemmings Left: " + lemmingsLeft + " Score: " + lemmingsSaved + " / " + lemmingsToSave;
+		score.text = "Left: " + lemmingsLeft + "     Score: " + lemmingsSaved + " / " + lemmingsToSave;
 	}
 
 	public void SetEndLevel(int lemmingsSaved, int lemmingsDestroyed, bool won) {
@@ -75,8 +75,8 @@ public class UIManager : MonoBehaviour {
 		endLevelMenu.enabled = true;
 		inGameUI.enabled = false;
 		pauseMenu.enabled = false;
-		lemmingsSavedText.text = "Lemmings saved: " + lemmingsSaved;
-		lemmingsDestroyedText.text = "Lemmings destroyed: " + lemmingsDestroyed;
+		lemmingsSavedText.text = "Saved: " + lemmingsSaved;
+		lemmingsDestroyedText.text = "Destroyed: " + lemmingsDestroyed;
 	}
 
 	public void RestartLevel() {

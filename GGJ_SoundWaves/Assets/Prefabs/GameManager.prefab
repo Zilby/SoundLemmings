@@ -386,9 +386,10 @@ MonoBehaviour:
   towers:
   - {fileID: 0}
   killWalls: []
-  goalBoxes: []
+  goalBoxes:
+  - {fileID: 0}
   playBox: {fileID: 0}
-  winAmount: 1
+  winAmount: 100
   lossAmount: 100
   round: 1
   levelTitle: TITLE

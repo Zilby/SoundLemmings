@@ -66,3 +66,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4478ded92f2ea4c63b90308ba2534f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amountOfLemmingsDestroyed: 0

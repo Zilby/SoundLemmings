@@ -405,6 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da238afdc05df4b3ba8fd47a757951ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minIntensity: 0
   pulseSpeed: 2
 --- !u!114 &114290073697089894
 MonoBehaviour:
@@ -433,7 +434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   behavior: 0
-  strength: 7
+  strength: 3
   isAttract: 0
   fullScale: 0
 --- !u!212 &212256259256181614
