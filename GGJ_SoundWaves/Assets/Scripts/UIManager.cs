@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour {
 	public Text lemmingsDestroyedText;
 	public Image success;
 	public Image failure;
+	public Button continueButton;
 
 	public Canvas inGameUI;
 	public Text level;
@@ -68,8 +69,12 @@ public class UIManager : MonoBehaviour {
 
 	public void SetEndLevel(int lemmingsSaved, int lemmingsDestroyed, bool won) {
 		if (won) {
+			continueButton.enabled = true;
+			continueButton.gameObject.GetComponent<Image> ().enabled = true;
 			success.enabled = true;
 		} else {
+			continueButton.enabled = false;
+			continueButton.gameObject.GetComponent<Image> ().enabled = false;
 			failure.enabled = true;
 		}
 		endLevelMenu.enabled = true;
