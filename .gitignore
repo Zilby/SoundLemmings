@@ -21,6 +21,7 @@ ExportedObj/
 /GGJ_SoundWaves/*.pdb
 /GGJ_SoundWaves/.DS_Store
 /GGJ_SoundWaves/*/.DS_Store
+!/GGJ_SoundWaves/ProjectSettings/InputManager.asset
 
 
 # Unity3D generated meta files
