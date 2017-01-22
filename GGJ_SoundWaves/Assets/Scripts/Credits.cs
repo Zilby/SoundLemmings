@@ -17,9 +17,7 @@ public class Credits : MonoBehaviour {
 	void Update () {
 		text.transform.position = text.transform.position + new Vector3 (0, scrollSpeed, 0) * Time.deltaTime;
 
-		if (Input.GetButtonDown ("Pause")) {
-		
-			Debug.Log ("butts");
+		if (Input.GetButtonDown ("Pause") || text.transform.position.y > 2000) {
 			SceneManager.LoadScene ("MainMenu");
 		}
 	}

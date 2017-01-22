@@ -380,7 +380,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -1600}
-  m_SizeDelta: {x: 1000, y: 2400}
+  m_SizeDelta: {x: 690, y: 2390}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1952298097
 MonoBehaviour:
@@ -449,6 +449,8 @@ MonoBehaviour:
     Andre de Oliveira
 
     Ryan Maloney
+
+    Alex Zilbersher
 
 
     VISUAL ART:
