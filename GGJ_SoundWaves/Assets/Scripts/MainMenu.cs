@@ -23,7 +23,11 @@ public class MainMenu : MonoBehaviour {
 		SceneManager.LoadScene (firstLevel);
 	}
 
-	public void Credits() {
+	public void LevelSelect() {
 		SceneManager.LoadScene ("LevelSelect");
+	}
+
+	public void Credits() {
+		SceneManager.LoadScene ("Credits");
 	}
 }
