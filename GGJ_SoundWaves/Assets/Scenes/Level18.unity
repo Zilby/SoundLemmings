@@ -1557,12 +1557,12 @@ Prefab:
     - target: {fileID: 114765502848842214, guid: 40c53ccf708bf4f6d9ab839b6e9b25c0,
         type: 2}
       propertyPath: round
-      value: 9
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 114765502848842214, guid: 40c53ccf708bf4f6d9ab839b6e9b25c0,
         type: 2}
       propertyPath: levelTitle
-      value: random
+      value: Physics
       objectReference: {fileID: 0}
     - target: {fileID: 114765502848842214, guid: 40c53ccf708bf4f6d9ab839b6e9b25c0,
         type: 2}
@@ -1577,7 +1577,7 @@ Prefab:
     - target: {fileID: 114765502848842214, guid: 40c53ccf708bf4f6d9ab839b6e9b25c0,
         type: 2}
       propertyPath: nextLevel
-      value: Level9
+      value: Level18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 40c53ccf708bf4f6d9ab839b6e9b25c0, type: 2}
