@@ -195,6 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.5
   destroyed: {fileID: 1342902507840864, guid: e04ff2eb327854de1b678f26e222e154, type: 2}
+  victory: {fileID: 1547772591815194, guid: 7fc1fddeec40b40298be236fb7857b76, type: 2}
 --- !u!212 &212546342872490530
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114891774389126004}
   m_Layer: 0
   m_Name: PlayBox
-  m_TagString: Untagged
+  m_TagString: PlayBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

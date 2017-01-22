@@ -6,6 +6,7 @@ public class Lemming : MonoBehaviour {
 
 	public float speed;
 	public GameObject destroyed;
+	public GameObject victory;
 
 	private Rigidbody2D rb;
 
@@ -18,6 +19,11 @@ public class Lemming : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	public void Victory() {
+		Instantiate (victory, gameObject.transform.position, Quaternion.identity);
+		Destroy (gameObject);
 	}
 
 	public void Death() {

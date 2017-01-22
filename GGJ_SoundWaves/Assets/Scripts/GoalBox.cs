@@ -20,7 +20,7 @@ public class GoalBox : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col) {
 		if (col.gameObject.tag == "Lemming") {
-			col.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+			col.gameObject.GetComponent<Lemming> ().Victory ();
 			amountOfLemmingsInGoal += 1;
 			goalSound.Play ();
 		}

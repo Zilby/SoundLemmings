@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Lemming
+  - Tower
+  - KillWall
+  - PlayBox
+  - GoalBox
   layers:
   - Default
   - TransparentFX

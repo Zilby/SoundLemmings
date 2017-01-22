@@ -6,10 +6,6 @@ public class GameManager : MonoBehaviour {
 
 	public Camera mainCamera;
 	public UIManager uiManager;
-	public List<Tower> towers;
-	public List<KillWall> killWalls;
-	public List<GoalBox> goalBoxes;
-	public PlayBox playBox;
 	public int winAmount;
 	public int lossAmount;
 
@@ -23,8 +19,26 @@ public class GameManager : MonoBehaviour {
 
 	private bool gameOver;
 
+	private ArrayList towers;
+	private ArrayList killWalls;
+	private ArrayList goalBoxes;
+	private PlayBox playBox;
+
 	// Use this for initialization
-	void Start () {
+	void Awake () {
+		towers = new ArrayList ();
+		killWalls = new ArrayList ();
+		goalBoxes = new ArrayList ();
+		foreach (GameObject g in GameObject.FindGameObjectsWithTag("Tower")) {
+			towers.Add (g.GetComponent<Tower> ());
+		}
+		foreach (GameObject g in GameObject.FindGameObjectsWithTag("KillWall")) {
+			killWalls.Add (g.GetComponent<KillWall> ());
+		}
+		foreach (GameObject g in GameObject.FindGameObjectsWithTag("GoalBox")) {
+			goalBoxes.Add (g.GetComponent<GoalBox> ());
+		}
+		playBox = GameObject.FindGameObjectWithTag ("PlayBox").GetComponent<PlayBox> ();
 		uiManager.SetNextLevel (nextLevel);
 		gameOver = false;
 	}

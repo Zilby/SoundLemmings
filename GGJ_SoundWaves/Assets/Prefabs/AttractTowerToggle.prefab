@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 82391502774455002}
   m_Layer: 0
   m_Name: AttractTowerToggle
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
