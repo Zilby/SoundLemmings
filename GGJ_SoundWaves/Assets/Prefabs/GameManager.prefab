@@ -383,14 +383,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 0}
   uiManager: {fileID: 0}
-  towers:
-  - {fileID: 0}
-  killWalls: []
-  goalBoxes:
-  - {fileID: 0}
-  playBox: {fileID: 0}
-  winAmount: 100
-  lossAmount: 100
+  winAmount: 25
+  lossAmount: 15
   round: 1
   levelTitle: TITLE
   nextLevel: CHANGETHIS
