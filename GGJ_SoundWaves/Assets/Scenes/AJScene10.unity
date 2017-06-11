@@ -561,7 +561,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4467607610866270, guid: 7f6a4d4d82632473fa8eb717c4f7fb95, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.59
+      value: -1.8
       objectReference: {fileID: 0}
     - target: {fileID: 4467607610866270, guid: 7f6a4d4d82632473fa8eb717c4f7fb95, type: 2}
       propertyPath: m_LocalPosition.z
@@ -590,6 +590,10 @@ Prefab:
     - target: {fileID: 1836087455731126, guid: 7f6a4d4d82632473fa8eb717c4f7fb95, type: 2}
       propertyPath: m_Name
       value: Bounce Wall (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467607610866270, guid: 7f6a4d4d82632473fa8eb717c4f7fb95, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.21824376
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f6a4d4d82632473fa8eb717c4f7fb95, type: 2}
